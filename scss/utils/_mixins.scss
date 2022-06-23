@@ -1,5 +1,5 @@
 @mixin button{
-    background: linear-gradient(168deg, $color-four 0%, $color-three 100%);
+    background: $degrade;
     color: $color-one;
     border:none;
     border-radius: 30px;

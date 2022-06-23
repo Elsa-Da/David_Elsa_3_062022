@@ -13,11 +13,12 @@
     background-color: $color-two;
     border-radius:20px;
     height:75px;
-    width:80%;
+    width:90%;
     margin-bottom: 30px;
     line-height:75px;
     font-weight: bold;
     box-shadow: 0px 4px 10px darken($color-two, 10%);
+    font-size: 16px;
    &::before {content: counter(li);
             display:inline-block;
             color: $color-one;
@@ -36,7 +37,7 @@
     }
 
     &__ico {
-        margin: 0 25px 0 25px;
+        margin: 0 20px 0 20px;
         color: darken($color-two, 50%); 
     }
 

@@ -1,0 +1,19 @@
+.footer {
+    background-color: darken($color-two, 75%);
+    padding: 25px;
+    ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
+    li {
+        margin-bottom:10px;
+    } 
+    a {
+        text-decoration: none;
+        color: $color-one;
+    }
+    &__logo {
+        color: white;
+        font-family: 'Shrikhand', cursive;
+    }
+}

@@ -7,3 +7,5 @@ $color-two: #F6F6F6;
 $color-three: #9356DC;
 $color-four : #FF79DA;
 $color-five : #99E2D0;
+
+$degrade : linear-gradient(168deg, $color-four 0%, $color-three 100%);
