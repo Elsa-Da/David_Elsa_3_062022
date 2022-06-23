@@ -1,0 +1,35 @@
+.localisation {
+    background-color: darken($color-two, 5%);
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0px 4px 8px darken($color-two, 11%), inset 0px -1px 2px darken($color-two, 9%);
+    &__contenu{
+        display: flex;
+        font-weight:bold;
+    }
+}
+
+.explorer {
+    background-color: $color-two;
+    text-align: center;
+    &__button {
+        @include button;
+    }
+    p, h1 {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+
+.restaurants {
+    background-color: $color-two;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    h2 {
+        align-self: flex-start;
+        margin-left: 30px;
+    }
+}

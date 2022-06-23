@@ -1,0 +1,43 @@
+.fonctionnement {
+    h2 {
+        margin-left: 30px;
+    }
+    ul {
+        list-style: none;
+        counter-reset: li;
+        margin:auto;
+       }
+
+   li {
+    counter-increment: li;
+    background-color: $color-two;
+    border-radius:20px;
+    height:75px;
+    width:80%;
+    margin-bottom: 30px;
+    line-height:75px;
+    font-weight: bold;
+    box-shadow: 0px 4px 10px darken($color-two, 10%);
+   &::before {content: counter(li);
+            display:inline-block;
+            color: $color-one;
+            background-color: $color-three;
+            border-radius:20px; 
+            padding:4px;
+            width:20px;
+            height:20px;
+            text-align: center;
+            margin-left:-10px;
+            line-height:1.2;
+        }
+    &:hover {
+        background-color: lighten($color-three, 35%);
+    }
+    }
+
+    &__ico {
+        margin: 0 25px 0 25px;
+        color: darken($color-two, 50%); 
+    }
+
+}

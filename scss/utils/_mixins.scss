@@ -1,0 +1,14 @@
+@mixin button{
+    background: linear-gradient(168deg, $color-four 0%, $color-three 100%);
+    color: $color-one;
+    border:none;
+    border-radius: 30px;
+    padding:18px;
+    box-shadow: 0px 2px 8px darken($color-two, 30%);
+    transition: all 400ms;
+    margin-bottom: 20px;
+    &:hover {
+        filter: brightness(1.2);
+        box-shadow: 0px 2px 8px darken($color-two, 60%);
+    }
+}
