@@ -57,7 +57,7 @@
         }
         &:hover .carte__option--prix {
             left: 100%;
-            transform: translateX(-230%);
+            transform: translateX(-240%);
         }
         &:hover .carte__option--validation--rotate {
             animation:spin 400ms linear 200ms;
@@ -118,3 +118,21 @@
     }
 }
 
+.animation {
+    &__one {
+    opacity:0;
+    animation: transition 1s ease-in-out 200ms both;
+    }
+    &__two {
+    opacity:0;
+    animation: transition 1s ease-in-out 600ms both;
+    }
+    &__three {
+    opacity:0;
+    animation: transition 1s ease-in-out 1000ms both;
+    }
+    &__four {
+    opacity:0;
+    animation: transition 1s ease-in-out 1400ms both;
+    }
+}

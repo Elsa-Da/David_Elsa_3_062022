@@ -2,3 +2,10 @@
     100% { 
         transform:rotate(360deg); 
     } }
+
+@keyframes transition {
+        0%   { margin-top: -70px;opacity:0; }
+        100% { margin-top: 0;opacity:1; }
+        }
+       
+        
