@@ -4,6 +4,29 @@ body {
   font-size: 1.2em;
 }
 
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+#logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 #logo img {
   width: 40%;
   display: block;
@@ -11,6 +34,11 @@ body {
   margin-bottom: 3%;
   margin-left: auto;
   margin-right: auto;
+}
+
+#logo .arrow {
+  margin-left: 20px;
+  margin-right: -20px;
 }
 
 .localisation {
@@ -249,5 +277,176 @@ body {
 .footer__logo {
   color: white;
   font-family: 'Shrikhand', cursive;
+}
+
+.menu {
+  position: relative;
+}
+
+.menu img {
+  width: 100%;
+  height: 230px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.menu__entete {
+  width: 100%;
+  background-color: #F6F6F6;
+  border-radius: 30px 30px 0 0;
+  position: absolute;
+  top: 80%;
+}
+
+.menu__entete--txt {
+  font-family: 'Shrikhand';
+  font-size: 13px;
+  padding: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.carte {
+  background-color: #F6F6F6;
+  margin-top: 50px;
+  padding-left: 5%;
+}
+
+.carte h2 {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: normal;
+  padding-top: 2%;
+  padding-bottom: 1%;
+  border-bottom: 3px solid #99E2D0;
+  display: inline-block;
+  width: 38px;
+}
+
+.carte__option {
+  font-size: 14px;
+  width: 85%;
+  height: 100%;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0px 10px 20px #e7e7e7;
+          box-shadow: 0px 10px 20px #e7e7e7;
+  border-radius: 20px;
+  padding: 5%;
+  padding-top: 0%;
+  margin-bottom: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+
+.carte__option:hover .carte__option--validation {
+  left: 100%;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+.carte__option:hover .carte__option--prix {
+  left: 100%;
+  -webkit-transform: translateX(-230%);
+          transform: translateX(-230%);
+}
+
+.carte__option:hover .carte__option--validation--rotate {
+  -webkit-animation: spin 400ms linear 200ms;
+          animation: spin 400ms linear 200ms;
+}
+
+.carte__option:hover p {
+  width: 82%;
+}
+
+.carte__option:hover h3 {
+  width: 99.9%;
+}
+
+.carte__option--plat h3 {
+  font-size: 16px;
+  margin-bottom: 6px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.carte__option--plat p {
+  margin: 0px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.carte__option--prix {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  font-weight: bold;
+  font-size: 16px;
+  -webkit-transition: left 1s, -webkit-transform 1s;
+  transition: left 1s, -webkit-transform 1s;
+  transition: left 1s, transform 1s;
+  transition: left 1s, transform 1s, -webkit-transform 1s;
+  -webkit-transform-origin: 50% right;
+          transform-origin: 50% right;
+}
+
+.carte__option--validation {
+  background-color: #99E2D0;
+  color: white;
+  font-size: 26px;
+  width: 35px;
+  border-radius: 0 20px 20px 0;
+  padding: 5%;
+  text-align: center;
+  line-height: 40px;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  right: -25%;
+  -webkit-transition: left 1s, -webkit-transform 1s;
+  transition: left 1s, -webkit-transform 1s;
+  transition: left 1s, transform 1s;
+  transition: left 1s, transform 1s, -webkit-transform 1s;
+  -webkit-transform-origin: 50% top;
+          transform-origin: 50% top;
+}
+
+.carte__button {
+  background: linear-gradient(168deg, #FF79DA 0%, #9356DC 100%);
+  color: #FFFFFF;
+  border: none;
+  border-radius: 30px;
+  padding: 18px;
+  -webkit-box-shadow: 0px 2px 8px #aaaaaa;
+          box-shadow: 0px 2px 8px #aaaaaa;
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
+  margin-bottom: 20px;
+  display: block;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 200px;
+}
+
+.carte__button:hover {
+  -webkit-filter: brightness(1.2);
+          filter: brightness(1.2);
+  -webkit-box-shadow: 0px 2px 8px #5d5d5d;
+          box-shadow: 0px 2px 8px #5d5d5d;
 }
 /*# sourceMappingURL=main.css.map */

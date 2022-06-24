@@ -1,0 +1,120 @@
+.menu {
+    position:relative;
+    img {
+    width:100%; 
+    height:230px;
+    object-fit: cover;
+    }
+    &__entete {
+        width: 100%;
+        background-color: $color-two;
+        border-radius: 30px 30px 0 0;
+        position:absolute;
+        top: 80%;
+        &--txt {
+            font-family: 'Shrikhand';
+        font-size:13px;
+        padding: 5%;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        }
+    }
+}
+
+.carte {
+    background-color: $color-two;
+    margin-top:50px;
+    padding-left:5%;
+    h2 {
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight:normal;
+        padding-top:2%;
+        padding-bottom:1%;
+        border-bottom: 3px solid $color-five;
+        display: inline-block;
+        width: 38px;
+    }
+   
+    &__option {
+        font-size:14px;
+        width: 85%;
+        height:100%;
+        background-color: $color-one; 
+        box-shadow: 0px 10px 20px rgb(231, 231, 231); 
+        border-radius: 20px;
+        padding: 5%;
+        padding-top:0%;
+        margin-bottom: 16px;
+        display: flex;
+        justify-content: space-between;
+        position:relative;
+        overflow:hidden;
+        &:hover .carte__option--validation {
+            left: 100%;
+            transform: translateX(-100%);
+        }
+        &:hover .carte__option--prix {
+            left: 100%;
+            transform: translateX(-230%);
+        }
+        &:hover .carte__option--validation--rotate {
+            animation:spin 400ms linear 200ms;
+        }
+        &:hover p {
+            width:82%;
+        }
+        &:hover h3 {
+            width:99.9%;
+        }
+    
+        &--plat {
+            h3 {
+                font-size:16px;
+                margin-bottom: 6px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+            p {
+              margin: 0px;
+              overflow: hidden;
+             white-space: nowrap;
+            text-overflow: ellipsis;
+            }
+        }
+     &--prix {
+        align-self: flex-end;
+        font-weight: bold;
+        font-size:16px;
+        transition: left 1s, transform 1s;
+        transform-origin: 50% right;
+        }
+    &--validation {
+        background-color: $color-five;
+        color:white;
+        font-size:26px;
+        width: 35px;
+        border-radius: 0 20px 20px 0;
+        padding: 5%;
+        text-align:center;
+        line-height: 40px;
+        height:100%;
+        position:absolute;
+        top:0%;
+        right:-25%;
+        transition: left 1s, transform 1s;
+        transform-origin: 50% top;
+    }
+    }
+    &__button {
+        @include button;
+        display: block;
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: 200px;
+    }
+}
+
