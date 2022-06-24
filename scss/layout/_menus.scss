@@ -62,14 +62,13 @@
         &:hover .carte__option--validation--rotate {
             animation:spin 400ms linear 200ms;
         }
-        &:hover p {
-            width:82%;
+        &:hover .carte__option--plat {
+            width:65%;
         }
-        &:hover h3 {
-            width:99.9%;
-        }
+        
     
         &--plat {
+            
             h3 {
                 font-size:16px;
                 margin-bottom: 6px;
@@ -80,8 +79,8 @@
             p {
               margin: 0px;
               overflow: hidden;
-             white-space: nowrap;
-            text-overflow: ellipsis;
+                white-space: nowrap;
+                text-overflow: ellipsis;
             }
         }
      &--prix {
