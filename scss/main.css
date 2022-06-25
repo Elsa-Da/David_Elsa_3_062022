@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Shrikhand&display=swap");
 body {
   font-family: "Roboto";
-  font-size: 1.2em;
 }
 
 @-webkit-keyframes spin {
@@ -320,14 +319,27 @@ body {
   padding-right: 10%;
 }
 
+.fonctionnement__liste {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .fonctionnement h2 {
   margin-left: 30px;
 }
 
 .fonctionnement ul {
+  width: 80%;
   list-style: none;
   counter-reset: li;
-  margin: auto;
 }
 
 .fonctionnement li {
@@ -335,7 +347,7 @@ body {
   background-color: #F6F6F6;
   border-radius: 20px;
   height: 75px;
-  width: 90%;
+  width: 100%;
   margin-bottom: 30px;
   line-height: 75px;
   font-weight: bold;
@@ -463,6 +475,7 @@ body {
   left: 0%;
   opacity: 0%;
   background: linear-gradient(168deg, #FF79DA 0%, #9356DC 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-transition: all 400ms;
@@ -518,7 +531,7 @@ body {
 
 .menu__entete--txt {
   font-family: 'Shrikhand';
-  font-size: 13px;
+  font-size: 14px;
   padding: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
