@@ -4,13 +4,20 @@
         flex-direction: column;
         align-items: center;
     }
+
     h2 {
         margin-left: 30px;
     }
+
     ul { 
         width:80%;
         list-style: none;
         counter-reset: li;
+        @include ordinateur {
+            display: flex;
+            flex-direction: row;
+            width:95%;
+           }
        }
 
    li {
@@ -24,7 +31,11 @@
     font-weight: bold;
     box-shadow: 0px 4px 10px darken($color-two, 10%);
     font-size: 16px;
-   &::before {content: counter(li);
+        @include ordinateur {
+        min-width:30%;
+        margin-right: 3%;
+       }
+        &::before {content: counter(li);
             display:inline-block;
             color: $color-one;
             background-color: $color-three;
@@ -36,7 +47,7 @@
             margin-left:-10px;
             line-height:1.2;
         }
-    &:hover {
+        &:hover {
         background-color: lighten($color-three, 35%);
     }
     }

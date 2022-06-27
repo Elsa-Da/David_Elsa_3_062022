@@ -4,6 +4,16 @@
     ul {
         list-style-type: none;
         padding-left: 0;
+        @include tablette {
+            display: flex;
+            justify-content: space-around;
+            padding-top:20px;
+           }
+           @include ordinateur {
+            display: flex;
+            justify-content: space-around;
+            padding-top:20px;
+           }
     }
     li {
         margin-bottom:10px;

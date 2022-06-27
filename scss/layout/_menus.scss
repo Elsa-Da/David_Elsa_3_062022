@@ -4,6 +4,9 @@
     width:100%; 
     height:230px;
     object-fit: cover;
+    @include ordinateur {
+        height:350px;
+       }
     }
     &__entete {
         width: 100%;
@@ -14,7 +17,7 @@
         &--txt {
             font-family: 'Shrikhand';
         font-size:14px;
-        padding: 5%;
+        padding: 40px;
         display:flex;
         justify-content: space-between;
         align-items: center;
@@ -26,11 +29,23 @@
     background-color: $color-two;
     margin-top:50px;
     padding-left:5%;
+    @include ordinateur {
+        width:100%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap:wrap;
+        padding-left:1%;
+       }
+    &__entrées, &__desserts, &__plats {
+        @include ordinateur {
+            min-width: 400px;
+           }
+    }
     h2 {
         text-transform: uppercase;
         font-size: 16px;
         font-weight:normal;
-        padding-top:2%;
+        padding-top:40px;
         padding-bottom:1%;
         border-bottom: 3px solid $color-five;
         display: inline-block;
@@ -58,6 +73,9 @@
         &:hover .carte__option--prix {
             left: 100%;
             transform: translateX(-240%);
+            @include tablette {
+                transform: translateX(-350%);
+               }
         }
         &:hover .carte__option--validation--rotate {
             animation:spin 400ms linear 200ms;
@@ -83,28 +101,28 @@
                 text-overflow: ellipsis;
             }
         }
-     &--prix {
-        align-self: flex-end;
-        font-weight: bold;
-        font-size:16px;
-        transition: left 1s, transform 1s;
-        transform-origin: 50% right;
+        &--prix {
+            align-self: flex-end;
+            font-weight: bold;
+            font-size:16px;
+            transition: left 1s, transform 1s;
+            transform-origin: 50% right;
         }
-    &--validation {
-        background-color: $color-five;
-        color:white;
-        font-size:26px;
-        width: 35px;
-        border-radius: 0 20px 20px 0;
-        padding: 5%;
-        text-align:center;
-        line-height: 40px;
-        height:100%;
-        position:absolute;
-        top:0%;
-        right:-25%;
-        transition: left 1s, transform 1s;
-        transform-origin: 50% top;
+        &--validation {
+            background-color: $color-five;
+            color:white;
+            font-size:26px;
+            width: 35px;
+            border-radius: 0 20px 20px 0;
+            padding: 5%;
+            text-align:center;
+            line-height: 50%;
+            height:100%;
+            position:absolute;
+            top:0%;
+            right:-25%;
+            transition: left 1s, transform 1s;
+            transform-origin: 50% top;
     }
     }
     &__button {
