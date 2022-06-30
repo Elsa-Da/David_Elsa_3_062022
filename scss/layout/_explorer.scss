@@ -1,35 +1,57 @@
-
-.localisation {
-    background-color: darken($color-two, 5%);
-    height: 70px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: inset 0px 4px 8px darken($color-two, 11%), inset 0px -1px 2px darken($color-two, 9%);
-    &__contenu{
-        display: flex;
-        font-weight:bold;
-    }}
-
 .explorer {
     background-color: $color-two;
     text-align: center;
+
     &__button {
         @include button;
+        margin-bottom: 50px;
+    }
 
-    }
     h1 {
-        font-size:28px;
+        font-size: 28px;
+
         @include ordinateur {
-           padding-top: 50px;
-           }
+            padding-top: 50px;
+        }
     }
+
     p {
         font-size: 16px;
     }
-    p, h1 {
+
+    p,
+    h1 {
         padding-left: 10%;
         padding-right: 10%;
     }
 }
 
+.localisation {
+    background-color: darken($color-two, 5%);
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0px 4px 8px darken($color-two, 11%), inset 0px -1px 2px darken($color-two, 9%);
+
+    &__input {
+        border: 0;
+        background: none;
+        text-align: center;
+        width: 35%;
+        margin-left: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+
+        @include ordinateur {
+            width: 15%;
+        }
+
+        &:focus {
+            border: 0;
+            outline: none;
+            background-color: rgba(255, 255, 255, 0.4);
+        }
+    }
+}
