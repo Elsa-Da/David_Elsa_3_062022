@@ -1,130 +1,149 @@
 .menu {
-    position:relative;
+    position: relative;
+
     img {
-    width:100%; 
-    height:230px;
-    object-fit: cover;
-    @include ordinateur {
-        height:350px;
-       }
+        width: 100%;
+        height: 230px;
+        object-fit: cover;
+
+        @include ordinateur {
+            height: 350px;
+        }
     }
+
     &__entete {
         width: 100%;
         background-color: $color-two;
         border-radius: 30px 30px 0 0;
-        position:absolute;
+        position: absolute;
         top: 80%;
+
+
         &--txt {
             font-family: 'Shrikhand';
-        font-size:14px;
-        padding: 40px;
-        display:flex;
-        justify-content: space-between;
-        align-items: center;
+            font-size: 14px;
+            padding: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
     }
 }
 
 .carte {
     background-color: $color-two;
-    margin-top:50px;
-    padding-left:5%;
+    margin-top: 50px;
+    padding-left: 5%;
+
     @include ordinateur {
-        width:100%;
+        width: 100%;
         display: flex;
         justify-content: space-around;
-        flex-wrap:wrap;
-        padding-left:1%;
-       }
-    &__entrées, &__desserts, &__plats {
+        flex-wrap: wrap;
+        padding-left: 1%;
+    }
+
+    &__entrées,
+    &__desserts,
+    &__plats {
         @include ordinateur {
             min-width: 400px;
-           }
+        }
     }
+
     h2 {
         text-transform: uppercase;
         font-size: 16px;
-        font-weight:normal;
-        padding-top:40px;
-        padding-bottom:1%;
+        font-weight: normal;
+        padding-top: 40px;
+        padding-bottom: 1%;
         border-bottom: 3px solid $color-five;
         display: inline-block;
         width: 38px;
     }
-   
+
     &__option {
-        font-size:14px;
+        font-size: 14px;
         width: 85%;
-        height:100%;
-        background-color: $color-one; 
-        box-shadow: 0px 10px 20px rgb(231, 231, 231); 
+        height: 100%;
+        background-color: $color-one;
+        box-shadow: 0px 10px 20px rgb(231, 231, 231);
         border-radius: 20px;
         padding: 5%;
-        padding-top:0%;
+        padding-top: 0%;
         margin-bottom: 16px;
         display: flex;
         justify-content: space-between;
-        position:relative;
-        overflow:hidden;
+        position: relative;
+        overflow: hidden;
+
         &:hover .carte__option--validation {
             left: 100%;
             transform: translateX(-100%);
         }
+
         &:hover .carte__option--prix {
             left: 100%;
             transform: translateX(-240%);
+
             @include tablette {
                 transform: translateX(-350%);
-               }
+            }
         }
+
         &:hover .carte__option--validation--rotate {
-            animation:spin 400ms linear 200ms;
+            animation: spin 400ms linear 200ms;
         }
+
         &:hover .carte__option--plat {
-            width:65%;
+            width: 65%;
         }
-        
-    
+
+
         &--plat {
-            
+
             h3 {
-                font-size:16px;
+                font-size: 16px;
                 margin-bottom: 6px;
                 overflow: hidden;
                 white-space: nowrap;
                 text-overflow: ellipsis;
             }
+
             p {
-              margin: 0px;
-              overflow: hidden;
+                margin: 0px;
+                overflow: hidden;
                 white-space: nowrap;
                 text-overflow: ellipsis;
             }
         }
+
         &--prix {
             align-self: flex-end;
             font-weight: bold;
-            font-size:16px;
+            font-size: 16px;
             transition: left 1s, transform 1s;
             transform-origin: 50% right;
         }
+
         &--validation {
             background-color: $color-five;
-            color:white;
-            font-size:26px;
+            color: white;
+            font-size: 26px;
             width: 35px;
             border-radius: 0 20px 20px 0;
             padding: 5%;
-            text-align:center;
+            text-align: center;
             line-height: 50%;
-            height:100%;
-            position:absolute;
-            top:0%;
-            right:-25%;
+            height: 100%;
+            position: absolute;
+            top: 0%;
+            right: -25%;
             transition: left 1s, transform 1s;
             transform-origin: 50% top;
+        }
     }
-    }
+
     &__button {
         @include button;
         display: block;
@@ -137,19 +156,22 @@
 
 .animation {
     &__one {
-    opacity:0;
-    animation: transition 1s ease-in-out 200ms both;
+        opacity: 0;
+        animation: transition 1s ease-in-out 200ms both;
     }
+
     &__two {
-    opacity:0;
-    animation: transition 1s ease-in-out 600ms both;
+        opacity: 0;
+        animation: transition 1s ease-in-out 600ms both;
     }
+
     &__three {
-    opacity:0;
-    animation: transition 1s ease-in-out 1000ms both;
+        opacity: 0;
+        animation: transition 1s ease-in-out 1000ms both;
     }
+
     &__four {
-    opacity:0;
-    animation: transition 1s ease-in-out 1400ms both;
+        opacity: 0;
+        animation: transition 1s ease-in-out 1400ms both;
     }
 }
