@@ -1,28 +1,36 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="utf-8" />
-        <link rel="stylesheet" href="scss/main.css" />
-        <link rel="stylesheet" href="scss/normalize.css" />
-        <script src="https://kit.fontawesome.com/ca64e4faaf.js" crossorigin="anonymous"></script>
-        <title>Ohmyfood</title>
-    </head>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="scss/main.css" />
+    <link rel="stylesheet" href="scss/normalize.css" />
+    <script src="https://kit.fontawesome.com/ca64e4faaf.js" crossorigin="anonymous"></script>
+    <title>Ohmyfood</title>
+</head>
 
 <body>
     <!-- LOADER -->
-    <div class="loader"><div class="loader__contenu"><div class="loader__couverts"><i class="fa-solid fa-utensils"></i></div>
-    <div class="loader__circle loader__circle--one"></div>
-    <div class="loader__circle loader__circle--two"></div>
-    <div class="loader__circle loader__circle--three"></div>
-    <div class="loader__circle loader__circle--four"></div>
-    </div></div>
+    <div class="loader">
+        <div class="loader__contenu">
+            <div class="loader__couverts"><i class="fa-solid fa-utensils"></i></div>
+            <div class="loader__circle loader__circle--one"></div>
+            <div class="loader__circle loader__circle--two"></div>
+            <div class="loader__circle loader__circle--three"></div>
+            <div class="loader__circle loader__circle--four"></div>
+        </div>
+    </div>
 
     <!-- HEADER -->
-    <header><div id="logo"><img src="./images/logo/ohmyfood.png" alt="Logo Ohmyfood"/></div></header>
+    <header>
+        <div id="logo"><img src="./images/logo/ohmyfood.png" alt="Logo Ohmyfood" /></div>
+    </header>
 
     <!-- EXPLORER -->
     <section class="explorer">
-        <div class="localisation"><i class="fa-solid fa-location-dot"></i><p>Paris, Belleville</p></div>
+        <div class="localisation"><i class="fa-solid fa-location-dot"></i>
+            <p>Paris, Belleville</p>
+        </div>
         <div class="explorer">
             <h1>Réservez le menu qui vous convient</h1>
             <p>Découvrer des restaurants d'exception, séléctionnés par nos soins.</p>
@@ -33,55 +41,77 @@
     <!-- PRESENTATION -->
     <section class="fonctionnement">
         <h2>Fonctionnement</h2>
-        <div class="fonctionnement__liste"><ul>
-            <li><i class="fa-solid fa-mobile-screen-button fonctionnement__ico"></i> Choisissez un restaurant</li>
-            <li><i class="fa-solid fa-list-ul fonctionnement__ico"></i> Composez votre menu</li>
-            <li><i class="fa-solid fa-store fonctionnement__ico"></i> Dégustez au restaurant</li>
-        </ul></div>
+        <div class="fonctionnement__liste">
+            <ul>
+                <li><i class="fa-solid fa-mobile-screen-button fonctionnement__ico"></i> Choisissez un restaurant</li>
+                <li><i class="fa-solid fa-list-ul fonctionnement__ico"></i> Composez votre menu</li>
+                <li><i class="fa-solid fa-store fonctionnement__ico"></i> Dégustez au restaurant</li>
+            </ul>
+        </div>
     </section>
 
     <!-- CARTES -->
     <section class="restaurants">
         <h2>Restaurants</h2>
-        
-        <div class="cards"><div class="card"><a href="palettedugout.html">
-            <div class="card__image"><img src="./images/restaurants/palette-du-gout.jpg" alt="La palette du goût" /><div class="card__image--new">Nouveau</div></div>
-                <div class="card__body">
-                    <div class="card__body--text">
-                    <h3>La palette du goût</h3>
-                    <p>Ménilmontant</p></div>  <i class="fa-regular fa-heart card__body--ico"><i class="fa-solid fa-heart card__body--icobis"></i></i>
-                    </div>
-         </a></div>
 
-         <div class="card"><a href="noteenchantee.html">
-            <div class="card__image"><img src="./images/restaurants/la-note-enchantee.jpg" alt="La note enchantée" /><div class="card__image--new">Nouveau</div></div>
-                <div class="card__body">
-                    <div class="card__body--text">
-                    <h3>La note enchantée</h3>
-                    <p>Charonne</p></div>  <i class="fa-regular fa-heart card__body--ico"><i class="fa-solid fa-heart card__body--icobis"></i></i>
+        <div class="cards">
+            <div class="card">
+                <a href="palettedugout.html">
+                    <div class="card__image"><img src="./images/restaurants/palette-du-gout.jpg"
+                            alt="La palette du goût" />
+                        <div class="card__image--new">Nouveau</div>
                     </div>
-                 
-         </a></div>
+                    <div class="card__body">
+                        <div class="card__body--text">
+                            <h3>La palette du goût</h3>
+                            <p>Ménilmontant</p>
+                        </div> <i class="fa-regular fa-heart card__body--ico"><i
+                                class="fa-solid fa-heart card__body--icobis"></i></i>
+                    </div>
+                </a>
+            </div>
 
-         <div class="card"><a href="alafrancaise.html">
-            <div class="card__image"><img src="./images/restaurants/a-la-francaise.jpg" alt="À la française" /></div>
-                <div class="card__body">
-                    <div class="card__body--text">
-                    <h3>À la française</h3>
-                    <p>Cité Rouge</p></div>  <i class="fa-regular fa-heart card__body--ico"><i class="fa-solid fa-heart card__body--icobis"></i></i>
+            <div class="card"><a href="noteenchantee.html">
+                    <div class="card__image"><img src="./images/restaurants/la-note-enchantee.jpg"
+                            alt="La note enchantée" />
+                        <div class="card__image--new">Nouveau</div>
                     </div>
-                 
-         </a></div>
+                    <div class="card__body">
+                        <div class="card__body--text">
+                            <h3>La note enchantée</h3>
+                            <p>Charonne</p>
+                        </div> <i class="fa-regular fa-heart card__body--ico"><i
+                                class="fa-solid fa-heart card__body--icobis"></i></i>
+                    </div>
 
-         <div class="card"><a href="delicedessens.html">
-            <div class="card__image"><img src="./images/restaurants/le-delice-des-sens.jpg" alt="Le délice des sens" /></div>
-                <div class="card__body">
-                    <div class="card__body--text">
-                    <h3>Le délice des sens</h3>
-                    <p>Folie-Méricourt</p></div>  <i class="fa-regular fa-heart card__body--ico"><i class="fa-solid fa-heart card__body--icobis"></i></i>
+                </a></div>
+
+            <div class="card"><a href="alafrancaise.html">
+                    <div class="card__image"><img src="./images/restaurants/a-la-francaise.jpg" alt="À la française" />
                     </div>
-                 
-         </a></div></div>
+                    <div class="card__body">
+                        <div class="card__body--text">
+                            <h3>À la française</h3>
+                            <p>Cité Rouge</p>
+                        </div> <i class="fa-regular fa-heart card__body--ico"><i
+                                class="fa-solid fa-heart card__body--icobis"></i></i>
+                    </div>
+
+                </a></div>
+
+            <div class="card"><a href="delicedessens.html">
+                    <div class="card__image"><img src="./images/restaurants/le-delice-des-sens.jpg"
+                            alt="Le délice des sens" /></div>
+                    <div class="card__body">
+                        <div class="card__body--text">
+                            <h3>Le délice des sens</h3>
+                            <p>Folie-Méricourt</p>
+                        </div> <i class="fa-regular fa-heart card__body--ico"><i
+                                class="fa-solid fa-heart card__body--icobis"></i></i>
+                    </div>
+
+                </a></div>
+        </div>
     </section>
 
     <!-- FOOTER -->
@@ -96,4 +126,5 @@
     </footer>
 
 </body>
+
 </html>

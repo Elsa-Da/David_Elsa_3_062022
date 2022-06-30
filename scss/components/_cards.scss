@@ -91,14 +91,14 @@
         position:absolute;
         top:0%;
         left:0%;
-        opacity: 0%;
+        opacity: 0;
         background: $degrade;
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         transition: all 400ms;
         &:hover {
-          opacity:100%;
+          opacity:1;
         }
       }
      }
