@@ -43,13 +43,33 @@
         padding-left: 1%;
     }
 
-    &__entrées,
-    &__desserts,
-    &__plats {
+    &__entrees,
+    &__plats,
+    &__desserts {
+        .carte__option {
+            &:nth-child(2) {
+                animation: transition 1s ease-in-out 200ms both;
+            }
+
+            &:nth-child(3) {
+                animation: transition 1s ease-in-out 600ms both;
+            }
+
+            &:nth-child(4) {
+                animation: transition 1s ease-in-out 1000ms both;
+            }
+
+            &:nth-child(5) {
+                animation: transition 1s ease-in-out 1400ms both;
+            }
+        }
+
         @include ordinateur {
             min-width: 400px;
         }
     }
+
+
 
     h2 {
         text-transform: uppercase;
@@ -65,7 +85,6 @@
     &__option {
         font-size: 14px;
         width: 85%;
-        height: 100%;
         background-color: $color-one;
         box-shadow: 0px 10px 20px rgb(231, 231, 231);
         border-radius: 20px;
@@ -142,6 +161,7 @@
             transition: left 1s, transform 1s;
             transform-origin: 50% top;
         }
+
     }
 
     &__button {
@@ -151,27 +171,5 @@
         margin-top: 50px;
         margin-bottom: 50px;
         width: 200px;
-    }
-}
-
-.animation {
-    &__one {
-        opacity: 0;
-        animation: transition 1s ease-in-out 200ms both;
-    }
-
-    &__two {
-        opacity: 0;
-        animation: transition 1s ease-in-out 600ms both;
-    }
-
-    &__three {
-        opacity: 0;
-        animation: transition 1s ease-in-out 1000ms both;
-    }
-
-    &__four {
-        opacity: 0;
-        animation: transition 1s ease-in-out 1400ms both;
     }
 }
