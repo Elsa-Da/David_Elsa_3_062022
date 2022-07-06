@@ -132,6 +132,10 @@
             padding: 5%;
             transition: left 1s, transform 1s;
             transform-origin: 50% right;
+
+            @include tablette {
+                align-self: flex-start;
+            }
         }
 
         &--validation {

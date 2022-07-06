@@ -381,6 +381,13 @@ body {
           transform-origin: 50% right;
 }
 
+@media all and (min-width: 768px) and (max-width: 992px) {
+  .carte__option--prix {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+}
+
 .carte__option--validation {
   background-color: #99E2D0;
   display: -webkit-box;
