@@ -248,7 +248,7 @@ body {
 
 .menu__entete--txt {
   font-family: 'Shrikhand';
-  font-size: 14px;
+  font-size: 12px;
   padding: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -259,6 +259,12 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media all and (min-width: 992px) {
+  .menu__entete--txt {
+    font-size: 16px;
+  }
 }
 
 .carte {
@@ -551,13 +557,9 @@ body {
 .card__body--ico {
   font-size: 28px;
   color: #777777;
-  position: relative;
 }
 
 .card__body--icobis {
-  position: absolute;
-  top: 0%;
-  left: 0%;
   opacity: 0;
   background: linear-gradient(168deg, #FF79DA 0%, #9356DC 100%);
   background-clip: text;

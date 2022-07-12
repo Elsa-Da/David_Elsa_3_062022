@@ -78,13 +78,9 @@
     &--ico {
       font-size: 28px;
       color: darken($color-two, 50%);
-      position: relative;
     }
 
     &--icobis {
-      position: absolute;
-      top: 0%;
-      left: 0%;
       opacity: 0;
       background: $degrade;
       background-clip: text;
