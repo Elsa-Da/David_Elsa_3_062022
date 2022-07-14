@@ -267,6 +267,16 @@ body {
   }
 }
 
+.menu__entete .card__body--ico {
+  font-size: 24px;
+}
+
+@media all and (min-width: 992px) {
+  .menu__entete .card__body--ico {
+    font-size: 33px;
+  }
+}
+
 .carte {
   background-color: #F6F6F6;
   margin-top: 50px;
